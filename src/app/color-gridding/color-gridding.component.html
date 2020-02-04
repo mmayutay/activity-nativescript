@@ -1,0 +1,12 @@
+<GridLayout columns="100px, *, *, 100px" rows="100px, *, *, 100px">
+    <Label (tap)="details('color: #000f58')" text="Label 1" row="0" column="0" colspan="4" style="background-color: #000f58; color: white"></Label>
+    <Label (tap)="details('color: #02AD31')" text="Label 2" row="0" column="4" rowspan="4" style="background-color: #02AD31"></Label>
+    <Label (tap)="details('color: #F5FF53')" text="Label 3" row="1" column="0" rowspan="1" style="background-color: #F5FF53"></Label>
+    <GridLayout row="1" column="1" colspan="2" rowspan="2" class="labelfour">
+        <Button [nsRouterLink]="['/']" text="Label 4" class="label"></Button>
+    </GridLayout>
+    <Label (tap)="details('color: #FF221E')" text="Label 5" row="2" column="0" colspan="1" style="background-color: #FF221E; color:white;" ></Label>
+    <Label (tap)="details('color: #FFA5A5')" text="Label 6" row="3" column="0" style="background-color: #FFA5A5"></Label>
+    <Label (tap)="details('color: #000f58')" text="Label 7" row="3" column="1" style="background-color: #000f58; color: white"></Label>
+    <Label (tap)="details('color: #F5FF53')" text="Label 8" row="3" column="2" style="background-color: #F5FF53"></Label>
+</GridLayout>

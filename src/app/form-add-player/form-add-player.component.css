@@ -1,0 +1,19 @@
+/* Add mobile styles for the component here.  */
+.input {
+    background-color: white
+}
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-image: url('https://images.unsplash.com/photo-1525201548942-d8732f6617a0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9');
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+TextView {
+    height: 50%;
+    color: white;
+}
+Button {
+    margin-top: 60%;
+}

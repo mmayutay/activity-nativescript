@@ -1,0 +1,10 @@
+/* Add mobile styles for the component here.  */
+.labelfour {
+    background-color: #7902DC;
+    color: white;
+    text-align: center;
+}
+.label {
+    vertical-align: center;
+    text-align: center;
+}
