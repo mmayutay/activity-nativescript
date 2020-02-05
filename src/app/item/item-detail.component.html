@@ -1,12 +1,12 @@
 <ActionBar title="Details"></ActionBar>
 
 <GridLayout rows="*, *" columns="*, *">
-    <FlexboxLayout flexDirection="column" style="background-image: url('https://images.unsplash.com/photo-1525201548942-d8732f6617a0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9');background-size: cover;background-attachment: fixed;"
+    <FlexboxLayout flexDirection="column" style="background-image: url('https://desktopwalls.net/wp-content/uploads/2014/06/Classic%20Guitar%20On%20Bed%20Music%20Desktop%20Wallpaper.jpg');background-size: cover;background-attachment: fixed;"
         row="0" col="0" colspan="2">
         <FlexboxLayout class="m-15" style="color: white" row="0">
             <Label style="color: white" class="h2" [text]="item.id + '. '"></Label>
             <Label style="color: white" class="h2" [text]="item.name"></Label><br>
-            <Button text="Update User" (tap)="update(item.id)"></Button>
+            <Button text="Update User" (tap)="update()"></Button>
         </FlexboxLayout>
         <Button *ngIf="count > 0" style="background-color: #FF7F7F; color: white" text="Decrement" (tap)="decrement()"></Button>
         <Button style="background-color: #7CA4FF; color: white" text="Increment" (tap)="increment()"></Button>
@@ -14,7 +14,7 @@
             class="h1 m-15" [text]="count"></Label>
         <Label style="color: white" class="h2" [text]="item.role"></Label>
     </FlexboxLayout>
-    <GridLayout *ngIf="boolean" row="1" col="0" colspan="2">
-        <ns-form-add-player (needToUpdate)="valueFromForm($event)" [name]="value.name" [usersArray]="value" [bool]="boolean"></ns-form-add-player>
+    <GridLayout *ngIf="showForm" row="1" col="0" colspan="2">
+        <ns-form-add-player (needToUpdate)="valueFromForm($event)" [name]="item.name"></ns-form-add-player>
     </GridLayout>
 </GridLayout>

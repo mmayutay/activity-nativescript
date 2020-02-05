@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Type } from '../item/item' 
+import { userType } from '../item/item' 
 
 @Component({
   selector: 'ns-artist',
@@ -7,7 +7,7 @@ import { Type } from '../item/item'
   styleUrls: ['./artist.component.css']
 })
 export class ArtistComponent implements OnInit {
-  items = Type.artist
+  items = userType.artist
 
   constructor() { }
 

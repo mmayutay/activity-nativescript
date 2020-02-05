@@ -2,9 +2,9 @@ export interface Item {
     id: number;
     name: string;
     role: string;
-    type: string;
+    type: userType;
 }
-export enum Type {
+export enum userType {
     artist = "Artist",
     socceer = "Socceer"
 }

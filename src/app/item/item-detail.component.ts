@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { ActivatedRoute} from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
 
 import { Item } from "./item";
 import { ItemService } from "./item.service";
@@ -9,11 +9,10 @@ import { ItemService } from "./item.service";
     templateUrl: "./item-detail.component.html"
 })
 export class ItemDetailComponent implements OnInit {
-    boolean = false
+    showForm = false
     dec = true
     count = 0
     item: Item;
-    value: any
 
     constructor(
         private itemService: ItemService,
@@ -35,11 +34,10 @@ export class ItemDetailComponent implements OnInit {
             this.count -= 1
         }
     }
-    update(id){
-        this.value = this.itemService.updateUser(id)
-        this.boolean = true
+    update() {
+        this.showForm = true
     }
-    valueFromForm(val){
+    valueFromForm(val) {
         this.itemService.updatedUser(this.item.id, val)
     }
 }
